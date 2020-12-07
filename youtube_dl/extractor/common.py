@@ -2062,6 +2062,7 @@ class InfoExtractor(object):
             note=note or 'Downloading MPD manifest',
             errnote=errnote or 'Failed to download MPD manifest',
             fatal=fatal, data=data, headers=headers, query=query)
+        print("MPD ManifestL: "+ mpd_url)
         if res is False:
             return []
         mpd_doc, urlh = res
